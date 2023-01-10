@@ -13,7 +13,7 @@ const wizard = {
     // heal(){
     //     return this.health = 100;
     // }
-    heal(num1, num2){
+    heal(num1, num2) {
         return this.health += num1 + num2;
     }
 }
@@ -25,9 +25,9 @@ const god = {
     health: 20
 }
 
-console.log('before healing ',god)
+console.log('before healing ', god)
 //console.log(wizard.heal.call(god))
-console.log(wizard.heal.call(god,10,20));
-console.log(wizard.heal.apply(god,[20,20]));
+console.log(wizard.heal.call(god, 10, 20));
+console.log(wizard.heal.apply(god, [20, 20]));
 //apply works on array
 console.log('after borrowing ', god)

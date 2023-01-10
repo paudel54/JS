@@ -4,12 +4,12 @@ var a = {
         console.log(this)
     }
 }
-a.say()
+//a.say()
 
 var b = {
     name: 'ram',
-    say(){
-        return function(){
+    say() {
+        return function () {
             console.log(this)
         }
     }
@@ -18,8 +18,8 @@ var b = {
 
 var c = {
     name: 'preety',
-    say(){
-        return ()=>{
+    say() {
+        return () => {
             console.log(this) //lexically binded  function inside function use of this pointed to current object
         }
     }
