@@ -18,6 +18,6 @@ const closure = function () {
 }
 
 const incrementFn = closure();
-incrementFn();
-incrementFn()
+incrementFn();//output 1
+incrementFn();//output2
 console.log(incrementFn());

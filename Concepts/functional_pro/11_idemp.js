@@ -8,3 +8,7 @@ function random(num) {
 }
 console.log('Printing')
 console.log(random(6));
+
+//exmp-2 
+Math.abs(-50);
+Math.abs(Math.abs(-50));
