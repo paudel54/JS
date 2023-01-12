@@ -33,3 +33,5 @@ const circle1 = createCircle(3);
 const circle2 = createCircle(5);
 console.log(circle1);
 console.log(circle2);
+
+//constructor: it don't returns rather we can see application of this keywod
