@@ -1,5 +1,5 @@
 //caching 
-
+//Dynamnic pragramming 
 function addTo80(n) {
     return n + 80;
 }
@@ -7,6 +7,7 @@ function addTo80(n) {
 
 
 function memoizedAdd() {
+    //object to cache
     let cache = {};
     return function (n) {
         if (n in cache) {

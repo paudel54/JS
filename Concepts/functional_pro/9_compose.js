@@ -2,6 +2,10 @@
 //compose right to left execution while
 //pipe works from left to right
 
+//compose like fog
+//data --> fn --> data --> fn // moving machine in assembly line
+//multiplyby3andabsolute
+
 
 // to make number positive and multiply by 3
 

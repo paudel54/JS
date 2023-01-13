@@ -15,16 +15,21 @@ const user = {
 
 const compose = (f, g) => (...args) => f(g(...args));
 
-//compose in JS
-purchaseItem(
-    emptyCart,
-    buyItem,
-    applyTaxToItems,
-    addItemToCart
-)(user, { name: 'laptop', price: '300' })
+//compose in JS rt to left processing
+// purchaseItem(
+//     emptyCart,
+//     buyItem,
+//     applyTaxToItems,
+//     addItemToCart
+// )(user, { name: 'laptop', price: '300' })
 
-function purchaseItem(...fns)  => fns.reduce(compose)
+purchaseItem(user, { name: 'laptop', price: 380 })
 
+function purchaseItem(user, item) {
+    return Object.assign({}, user, { purchase: item })
+}
+
+console.log(purchaseItem());
 
 function itemToCart() { }
 
