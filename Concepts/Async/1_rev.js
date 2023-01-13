@@ -8,3 +8,16 @@ Promise.resolve('hi').then((data) => console.log('2', data))
 
 //3
 console.log('3', 'is a crowd')
+
+
+
+//call stack
+
+//recursion: function calling itself.
+// example of stace oveflow
+
+// function foo(){
+//     foo()
+// }
+
+// foo()
