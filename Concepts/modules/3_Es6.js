@@ -1,0 +1,8 @@
+//use of import keyword was introduced. also export
+
+import module1 from 'module1';
+import module2 from 'module2';
+
+export function jump() {
+
+}
